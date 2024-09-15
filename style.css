@@ -60,20 +60,25 @@ body {
 
 /* Positioning the icons */
 .phone {
-    top: 10%;
     left: 50%;
+    top: 10%;
     transform: translate(-50%, -50%);
 }
 
 .email {
     left: 10%;
-    top: 66%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .instagram {
     left: 90%;
-    top: 66%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.linkedin {
+    left: 50%;
+    top: 90%;
     transform: translate(-50%, -50%);
 }
 
