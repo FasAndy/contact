@@ -60,8 +60,8 @@ body {
 
 /* Positioning the icons */
 .phone {
+    top: 10%; /* Positioned at 12 o'clock */
     left: 50%;
-    top: 10%;
     transform: translate(-50%, -50%);
 }
 .phone:hover {
@@ -69,7 +69,7 @@ body {
 }
 
 .email {
-    left: 10%;
+    left: 10%; /* Positioned at 9 o'clock */
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -78,18 +78,18 @@ body {
 }
 
 .instagram {
-    left: 90%;
+    right: 10%; /* Positioned at 3 o'clock */
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -50%);
 }
 .instagram:hover {
     color: #e1306c;
 }
 
 .linkedin {
+    bottom: 10%; /* Positioned at 6 o'clock */
     left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
 }
 .linkedin:hover {
     color: #0077B5;
