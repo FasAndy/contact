@@ -14,41 +14,85 @@ body {
 }
 
 .container {
+    position: relative;
     text-align: center;
+    width: 100%;
 }
 
-.profile-picture img {
-    width: 150px;
-    height: 150px;
+.profile-circle {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
     border: 5px solid #333;
 }
 
-.contact-info {
-    margin-top: 20px;
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
 }
 
 .icon {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
+    position: absolute;
 }
 
 .icon:hover {
     color: #0073e6;
 }
 
+/* Positioning the icons around the circle */
+.icon:nth-child(1) { /* Phone Icon */
+    top: -50px;
+    left: calc(50% - 24px); /* Center horizontally */
+}
+.icon:nth-child(2) { /* Email Icon */
+    bottom: -50px;
+    left: calc(50% - 24px); /* Center horizontally */
+}
+.icon:nth-child(3) { /* Instagram Icon */
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+}
+
+/* Mobile adjustments */
 @media (max-width: 600px) {
     .icon {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
-    .profile-picture img {
-        width: 120px;
-        height: 120px;
+    .profile-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact-icons {
+        width: 250px;
+        height: 250px;
+    }
+
+    .icon:nth-child(1), .icon:nth-child(2) {
+        left: calc(50% - 18px);
+    }
+
+    .icon:nth-child(3) {
+        right: -40px;
     }
 }
