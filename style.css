@@ -48,14 +48,14 @@ body {
 
 .icon {
     font-size: 4rem; /* Increased size */
-    color: #333;
+    color: #111111;
     text-decoration: none;
     transition: color 0.3s ease;
     position: absolute;
 }
 
 .icon:hover {
-    color: #0073e6;
+    color: #6ec418;
 }
 
 /* Positioning the icons */
@@ -64,11 +64,17 @@ body {
     top: 10%;
     transform: translate(-50%, -50%);
 }
+.phone:hover {
+    color: #25D366;
+}
 
 .email {
     left: 10%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.email:hover {
+    color: #fbbc05;
 }
 
 .instagram {
@@ -76,11 +82,19 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.instagram:hover {
+    color: #e1306c;
+}
+
 .linkedin {
     left: 50%;
     top: 90%;
     transform: translate(-50%, -50%);
 }
+.linkedin:hover {
+    color: #0077B5;
+}
+ 
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
