@@ -20,8 +20,8 @@ body {
 }
 
 .profile-circle {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid #333;
@@ -38,8 +38,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 200px; /* Adjusted to match the profile-circle size */
-    height: 200px; /* Adjusted to match the profile-circle size */
+    width: 650px; /* Adjusted to match the profile-circle size */
+    height: 650px; /* Adjusted to match the profile-circle size */
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
@@ -66,14 +66,14 @@ body {
 }
 
 .email {
-    left: 90%;
-    top: 50%;
+    left: 10%;
+    top: 66%;
     transform: translate(-50%, -50%);
 }
 
 .instagram {
-    left: 10%;
-    top: 50%;
+    left: 90%;
+    top: 66%;
     transform: translate(-50%, -50%);
 }
 
