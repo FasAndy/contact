@@ -11,12 +11,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 .container {
     position: relative;
     text-align: center;
     width: 100%;
+    max-width: 400px; /* Limits the container width for smaller screens */
 }
 
 .profile-circle {
@@ -31,68 +33,40 @@ body {
 .profile-circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image fits the circle without stretching */
 }
 
 .contact-icons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 30px; /* Adds space between the image and the icons */
     display: flex;
     justify-content: space-around;
     width: 300px;
-    height: 300px;
+    margin: 0 auto; /* Centers the icons horizontally */
 }
 
 .icon {
-    font-size: 3rem;
+    font-size: 3rem; /* Makes the icons larger */
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
-    position: absolute;
 }
 
 .icon:hover {
-    color: #0073e6;
-}
-
-/* Positioning the icons around the circle */
-.icon:nth-child(1) { /* Phone Icon */
-    top: -50px;
-    left: calc(50% - 24px); /* Center horizontally */
-}
-.icon:nth-child(2) { /* Email Icon */
-    bottom: -50px;
-    left: calc(50% - 24px); /* Center horizontally */
-}
-.icon:nth-child(3) { /* Instagram Icon */
-    top: 50%;
-    right: -50px;
-    transform: translateY(-50%);
+    color: #0073e6; /* Changes icon color on hover */
 }
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
-    .icon {
-        font-size: 2.5rem;
-    }
-
     .profile-circle {
         width: 150px;
         height: 150px;
     }
 
+    .icon {
+        font-size: 2.5rem; /* Slightly smaller icons for mobile */
+    }
+
     .contact-icons {
-        width: 250px;
-        height: 250px;
-    }
-
-    .icon:nth-child(1), .icon:nth-child(2) {
-        left: calc(50% - 18px);
-    }
-
-    .icon:nth-child(3) {
-        right: -40px;
+        width: 250px; /* Adjusts the container width for icons */
     }
 }
