@@ -99,16 +99,16 @@ body {
 /* Mobile adjustments */
 @media (max-width: 600px) {
     .profile-circle {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
     .icon {
-        font-size: 3rem; /* Slightly smaller icons for mobile */
+        font-size: 3.5rem; /* Slightly smaller icons for mobile */
     }
 
     .contact-icons {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
 }
